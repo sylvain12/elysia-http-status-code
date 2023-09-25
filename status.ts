@@ -1,12 +1,17 @@
+/**
+ * The status codes listed below are defined by RFC 9110.
+ * see RFC 9110 - https://httpwg.org/specs/rfc9110.html#overview.of.status.codes
+ */
+
 // Enum for HTTP Status Code
 export enum HttpStatusEnum {
-	// HTTP Informational Code Status
+	// Informational Responses
 	HTTP_100_CONTINUE = 100,
 	HTTP_101_SWITCHING_PROTOCOLS = 101,
 	HTTP_102_PROCESSING = 102,
 	HTTP_103_EARLY_HINTS = 103,
 
-	// HTTP Success Code Status
+	// Successful Responses
 	HTTP_200_OK = 200,
 	HTTP_201_CREATED = 201,
 	HTTP_202_ACCEPTED = 202,
@@ -18,7 +23,7 @@ export enum HttpStatusEnum {
 	HTTP_208_ALREADY_REPORTED = 208,
 	HTTP_226_IM_USED = 226,
 
-	// HTTP Redirection Code Status
+	// Redirection Messages
 	HTTP_300_MULTIPLE_CHOICES = 300,
 	HTTP_301_MOVED_PERMANENTLY = 301,
 	HTTP_302_FOUND = 302,
@@ -29,7 +34,7 @@ export enum HttpStatusEnum {
 	HTTP_307_TEMPORARY_REDIRECT = 307,
 	HTTP_308_PERMANENT_REDIRECT = 308,
 
-	// HTTP Client Error Code Status
+	// Client Error Responses
 	HTTP_400_BAD_REQUEST = 400,
 	HTTP_401_UNAUTHORIZED = 401,
 	HTTP_402_PAYMENT_REQUIRED = 402,
@@ -60,7 +65,7 @@ export enum HttpStatusEnum {
 	HTTP_431_REQUEST_HEADER_FIELDS_TOO_LARGE = 431,
 	HTTP_451_UNAVAILABLE_FOR_LEGAL_REASONS = 451,
 
-	// HTTP server error code status
+	// Server Error Responses
 	HTTP_500_INTERNAL_SERVER_ERROR = 500,
 	HTTP_501_NOT_IMPLEMENTED = 501,
 	HTTP_502_BAD_GATEWAY = 502,
