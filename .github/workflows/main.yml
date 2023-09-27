@@ -33,7 +33,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+          scope: '@sylvain12'
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: 1.0.3
@@ -48,9 +50,6 @@ jobs:
       - name: Publish
         # if: steps.changesets.output.hasChangesets == 'false'
         run: npm publish
-        with:
-          registry-url: https://npm.pkg.github.com/
-          scope: '@sylvain12'
           
 
 
