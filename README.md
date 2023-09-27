@@ -1,4 +1,5 @@
 # Elysia Status Code
+ELysia plugin to use text format to set http status code
 
 ## Installation
 ```bash
@@ -6,8 +7,7 @@ bun add --exact elysia-http-status-code
 ```
 
 ## Usage
-To start the development server run:
-```bash
+```ts
 import Elysia from 'elysia'
 import { HttpStatusCode } from 'elysia-http-status-code';
 
