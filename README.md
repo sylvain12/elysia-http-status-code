@@ -1,15 +1,25 @@
-# Elysia with Bun runtime
+# Elysia Status Code
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+## Installation
 ```bash
-bun create elysia ./elysia-example
+bun add --exact elysia-http-status-code
 ```
 
-## Development
+## Usage
 To start the development server run:
 ```bash
-bun run dev
-```
+import Elysia from 'elysia'
+import { HttpStatusCode } from 'elysia-http-status-code';
 
-Open http://localhost:3000/ with your browser to see the result.
+new Elysia()
+  .use(HttpStatusCode())
+  .get('/'. ({set, httpStatus}) => {
+    set.status = httpStatus.HTTP_200_OK;
+    return `Hello With response ${httpStatus.HTTP_200_OK}`;
+  })
+  .post('/user', ({set, body, httpStatus}) => {
+    set.status = httpStatus.HTTP_200_OK;
+    return {"user": body.name}
+  })
+  .listen(3000);
+```
