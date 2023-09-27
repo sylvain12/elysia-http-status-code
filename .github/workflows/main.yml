@@ -40,7 +40,7 @@ jobs:
       - run: bun install
       - name: Create Realease Pull Request or Publish
         id: changesets
-        uses: changesets/actions@v1
+        uses: changesets/action@v1
         with:
           publish: bun build
 
