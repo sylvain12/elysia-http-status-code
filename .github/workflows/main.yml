@@ -44,7 +44,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         env:
-          GITHUB_TOKEN ${{ github.token }}
+          GITHUB_TOKEN ${{ secrets.GITHUB_TOKEN }}
       - name: Publish
         if: steps.changesets.output.hasChangesets == 'false'
         run: bun build
