@@ -44,10 +44,10 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         env:
-          repo-token ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish
         if: steps.changesets.output.hasChangesets == 'false'
-        run: bun build
+        run: npm publish
           
 
 
