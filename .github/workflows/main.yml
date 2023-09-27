@@ -1,8 +1,9 @@
 name: Publish Package to GitHub Packages
 
 on:
-  release:
-    type: [published]
+  push:
+    branches:
+      - main
 
 jobs:
   lint:
