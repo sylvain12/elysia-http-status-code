@@ -3,7 +3,7 @@ ELysia plugin to use text format to set http status code
 
 ## Installation
 ```bash
-bun add --exact elysia-http-status-code
+bun add @sylvain12/elysia-http-status-code
 ```
 
 ## Usage
