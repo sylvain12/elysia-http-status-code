@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   lint:
     name: "Lint"
@@ -41,10 +43,11 @@ jobs:
       - name: Create Realease Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
-        with:
-          publish: bun build
         env:
-          GITHUB_TOKEN ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN ${{ github.token }}
+      - name: Publish
+        if: steps.changesets.output.hasChangesets == 'false'
+        run: bun build
           
 
 
