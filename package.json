@@ -18,6 +18,9 @@
     "test": "bun test",
     "lint": "tsc"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@sylvain12"
+  },
   "keywords": [
     "elysia",
     "http-status-code"

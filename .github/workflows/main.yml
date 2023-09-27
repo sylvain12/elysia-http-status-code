@@ -37,7 +37,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@sylvain12'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: oven-sh/setup-bun@v1
         with:
@@ -48,7 +47,6 @@ jobs:
         uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           run: npm run build
       - name: Publish
