@@ -43,7 +43,9 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: bun build
-          NODE_AUTH_TOKEN: ${{ env.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN ${{ secrets.GITHUB_TOKEN }}
+          
 
 
 
