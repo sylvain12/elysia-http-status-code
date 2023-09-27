@@ -43,5 +43,7 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: bun build
+          env:
+            GITHUB_TOKEN: ${{ env.ELYSIA_HTTP_STATUS_TOKEN }}
 
       
