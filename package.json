@@ -18,6 +18,9 @@
     "test": "bun test",
     "lint": "tsc"
   },
+  "repository": {
+    "url": "https://github.com/sylvain12/elysia-http-status-code"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@sylvain12"
   },
