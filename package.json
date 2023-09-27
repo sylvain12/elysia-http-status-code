@@ -1,15 +1,29 @@
 {
-  "name": "elysia-status-code",
-  "version": "1.0.50",
+  "name": "elysia-http-status-code",
+  "description": "ELysia plugin to use text format to set http status code",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Sylvain Kadjo",
+    "url": "https://sylvainkadjo.com",
+    "email": "sylvainka12@gmail.com"
+  },
+  "module": "index.ts",
+  "files": ["index.ts", "status.ts"],
+  "type": "module",
   "scripts": {
     "test": "bun test",
-    "dev": "bun run --watch index.ts"
+    "lint": "tsc"
   },
-  "dependencies": {
+  "keywords": ["elysia", "http-status-code"],
+  "dependencies": {},
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "bun-types": "latest",
     "elysia": "latest"
   },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "index.js"
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "elysia": "0.7.12"
+  }
 }
