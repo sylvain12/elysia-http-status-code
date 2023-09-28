@@ -1,5 +1,5 @@
 {
-  "name": "elysia-http-status-code",
+  "name": "@sylvain12/elysia-http-status-code",
   "description": "ELysia plugin to use text format to set http status code",
   "version": "1.0.0",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "url": "https://github.com/sylvain12/elysia-http-status-code"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "@sylvain12:registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "elysia",
