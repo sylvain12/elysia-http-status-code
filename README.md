@@ -1,4 +1,4 @@
-# Elysia Status Code
+# Elysia Http Status Code
 Simple http status code plugin for [Elysia.js](https://elysiajs.com/).
 
 ## Installation
