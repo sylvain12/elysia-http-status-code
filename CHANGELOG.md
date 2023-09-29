@@ -1,5 +1,11 @@
 # elysia-http-status-code
 
+## 1.0.3
+
+### Patch Changes
+
+- 2f1bed3: Add changeset check before publish
+
 ## 1.0.1
 
 ### Patch Changes
