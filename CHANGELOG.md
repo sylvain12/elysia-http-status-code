@@ -1,5 +1,11 @@
 # elysia-http-status-code
 
+## 1.0.5
+
+### Patch Changes
+
+- dd8328d: Fix changeset checking before publishing package
+
 ## 1.0.4
 
 ### Patch Changes
