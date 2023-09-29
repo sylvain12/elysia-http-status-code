@@ -34,10 +34,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          # registry-url: https://npm.pkg.github.com/
-          # scope: '@sylvain12'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@sylvainka12'
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: 1.0.3
@@ -46,7 +46,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
           run: npm run build
       - name: Publish
