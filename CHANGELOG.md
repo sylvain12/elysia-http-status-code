@@ -1,5 +1,11 @@
 # elysia-http-status-code
 
+## 1.0.1
+
+### Patch Changes
+
+- 2e77df2: Change package description
+
 ## 1.0.0
 
 ### Major Changes
