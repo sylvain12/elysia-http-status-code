@@ -18,7 +18,7 @@ new Elysia()
     return `Hello With response ${httpStatus.HTTP_200_OK}`;
   })
   .post('/user', ({set, body, httpStatus}) => {
-    set.status = httpStatus.HTTP_200_OK;
+    set.status = httpStatus.HTTP_201_CREATED;
     return {"user": body.name}
   })
   .listen(3000);

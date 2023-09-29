@@ -1,5 +1,11 @@
 # elysia-http-status-code
 
+## 1.0.7
+
+### Patch Changes
+
+- Launch pipeline on launch
+
 ## 1.0.6
 
 ### Patch Changes
