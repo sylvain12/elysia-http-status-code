@@ -1,9 +1,9 @@
 # Elysia Status Code
-ELysia plugin to for http status code
+Simple http status code plugin for [Elysia.js](https://elysiajs.com/).
 
 ## Installation
 ```bash
-bun add @sylvain12/elysia-http-status-code
+bun add elysia-http-status-code
 ```
 
 ## Usage
