@@ -1,5 +1,5 @@
 # Elysia Status Code
-ELysia plugin to use text format to set http status code
+ELysia plugin to for http status code
 
 ## Installation
 ```bash
