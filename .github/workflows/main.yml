@@ -2,8 +2,7 @@ name: Publish Package to GitHub Packages
 
 on:
   release:
-    branches:
-      - main
+    types: [published]
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
