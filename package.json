@@ -1,6 +1,6 @@
 {
-  "name": "elysia-http-status-code",
-  "description": "ELysia plugin to use text format to set http status code",
+  "name": "@sylvain/elysia-http-status-code",
+  "description": "ELysia plugin for http status code",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
