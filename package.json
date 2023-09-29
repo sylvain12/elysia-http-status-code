@@ -1,7 +1,7 @@
 {
   "name": "elysia-http-status-code",
   "description": "Simple http status code plugin for Elysia.js.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "author": {
     "name": "Sylvain Kadjo",

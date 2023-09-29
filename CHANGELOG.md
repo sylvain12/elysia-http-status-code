@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- Change package README content
+
+## 1.0.7
+
+### Patch Changes
+
 - Launch pipeline on launch
 
 ## 1.0.6
