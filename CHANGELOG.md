@@ -1,5 +1,11 @@
 # elysia-http-status-code
 
+## 1.0.4
+
+### Patch Changes
+
+- 6e5e9a2: Changeset checking before publish
+
 ## 1.0.3
 
 ### Patch Changes
