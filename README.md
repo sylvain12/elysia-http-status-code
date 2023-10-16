@@ -3,12 +3,10 @@ Simple http status code plugin for [Elysia.js](https://elysiajs.com/).
 
 ## Installation
 
-- Install using bun:
 ```bash
 bun add elysia-http-status-code
 ```
-
-- Install using npm
+or
 ```bash
 npm install elysia-http-status-code
 ```
