@@ -49,7 +49,7 @@ jobs:
         with:
           run: npm run build
       - name: Publish
-        # if: steps.changesets.output.hasChangesets == 'false'
+        if: steps.changesets.output.hasChangesets == 'false'
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
