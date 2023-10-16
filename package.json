@@ -23,7 +23,7 @@
   },
   "keywords": [
     "elysia",
-    "http-status-code"
+    "elysia-http-status-code"
   ],
   "dependencies": {},
   "devDependencies": {
