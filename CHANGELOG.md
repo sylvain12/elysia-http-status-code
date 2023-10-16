@@ -1,5 +1,11 @@
 # elysia-http-status-code
 
+## 1.0.9
+
+### Patch Changes
+
+- d2e5fa5: Change package keyword
+
 ## 1.0.8
 
 ### Patch Changes
