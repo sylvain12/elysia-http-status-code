@@ -1,5 +1,11 @@
 # elysia-http-status-code
 
+## 1.0.8
+
+### Patch Changes
+
+- 8faf9d1: Add installation instruction for both npm and bun
+
 ## 1.0.7
 
 ### Patch Changes
