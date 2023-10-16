@@ -6,10 +6,6 @@ Simple http status code plugin for [Elysia.js](https://elysiajs.com/).
 ```bash
 bun add elysia-http-status-code
 ```
-or
-```bash
-npm install elysia-http-status-code
-```
 
 ## Usage
 ```ts
